@@ -1,0 +1,57 @@
+/**
+
+	© +Vibez Recordz 2014
+
+	www.positivevibezrecordz.com
+
+**/
+
+body {
+	background-color: black;
+	font-family: 'Press Start 2P', cursive;
+	font-size:12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+}
+
+/*all links*/
+a:link {color: #333; text-decoration: none;}
+
+a:hover {text-decoration: underline;}
+
+a:visited {color: #333; text-decoration: none;}
+
+a:visited:hover {text-decoration: underline;}
+
+
+/*a {
+
+	color:#333;
+
+}
+*/
+
+/*.clear {
+
+	clear:both;
+	height:0px;
+	margin:0px;
+	padding:0px;
+}
+*/
+
+h1 {
+	font-size: 36px; /* Change this value to adjust the font size */
+	color: white; /* Change this value to adjust the font color */
+	text-align: center; /* Use "left", "center", or "right" to adjust the text alignment */
+}
+  
+#wrapper {
+	width:960px;
+	margin:0px auto; /* the auto margins (in conjunction with a width) center the page */
+	padding:0px;
+	
+}

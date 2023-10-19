@@ -1,0 +1,18 @@
+name: Push image to DockerHub
+
+on:
+  push:
+    branches: [ "main" ]
+#  pull_request:
+#    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build the Docker image
+      uses: actions/checkout@v3
+    - name: build
+      run: docker build . -t juronja/podri-sajt:latest
+    - name: push
+      run: docker login -u juronja -p ${{ secrets.DOCKER_HUB_TOKEN }} && docker push juronja/podri-sajt:latest

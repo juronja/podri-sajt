@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  podri-sajt:
+    image: 'juronja/podri-sajt:latest'
+    container_name: podri-sajt
+    restart: unless-stopped
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '8989:80'
+    networks:
+      - proxy
+networks:
+  proxy:
+    name: proxy
+    external: true
